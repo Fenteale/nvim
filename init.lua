@@ -1,5 +1,7 @@
 require("config.lazy")
 
+vim.cmd("colorscheme nightfox")
+
 vim.g.mapleader = " "
 
 local builtin = require('telescope.builtin')
