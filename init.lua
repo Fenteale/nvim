@@ -1,6 +1,7 @@
 require("config.lazy")
 
 vim.cmd("colorscheme nightfox")
+vim.cmd("set nowrap")
 
 vim.g.mapleader = " "
 
