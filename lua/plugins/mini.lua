@@ -8,7 +8,7 @@ return {
 		vim.keymap.set("n", "<Leader>mc", MiniMap.close)
 		vim.keymap.set("n", "<Leader>mt", MiniMap.toggle)
 
-		require('mini.sessions').setup()
+		require('mini.sessions').setup({autowrite = false})
 		-- vim.keymap.set("n", "<Leader>ms", vim.ui.input({prompt = "Session Name (Leave blank for Default session)" }, function(str) MiniSessions.write(str) end)
 		vim.keymap.set("n", "<Leader>msw", function()
 			local inp = vim.fn.input("Session Name: ")
