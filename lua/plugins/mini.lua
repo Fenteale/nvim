@@ -12,7 +12,7 @@ return {
 		-- vim.keymap.set("n", "<Leader>ms", vim.ui.input({prompt = "Session Name (Leave blank for Default session)" }, function(str) MiniSessions.write(str) end)
 		vim.keymap.set("n", "<Leader>msw", function()
 			local inp = vim.fn.input("Session Name: ")
-			if text == nil
+			if string.len(inp) == 0
 			then
 				MiniSessions.write()
 			else
