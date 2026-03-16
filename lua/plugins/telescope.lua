@@ -22,4 +22,16 @@ return {
 			"<leader>fh", require('telescope.builtin').help_tags,
 		},
 	},
+	opts = {
+		defaults = {
+			mappings = {
+		i = {
+			["<esc>"] = false,
+		},
+		n = {
+			["<esc>"] = false,
+		},
+			},
+		},
+	},
 }
