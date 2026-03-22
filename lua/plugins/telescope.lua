@@ -9,29 +9,22 @@ return {
 		{
 			"<C-p>", require('telescope.builtin').find_files,
 		},
-		{
-			"<C-[>", require('telescope.builtin').git_files,
-		},
+		-- Oops, didnt realize this is the same as escape in most terminals...
+		-- will beind it to something else later...
+		-- {
+		--	"<C-[>", require('telescope.builtin').git_files,
+		-- },
 		{
 			"<C- >", require('telescope.builtin').live_grep,
+		},
+		{
+			"<leader>lg", require('telescope.builtin').live_grep,
 		},
 		{
 			"<leader>fb", require('telescope.builtin').buffers,
 		},
 		{
 			"<leader>fh", require('telescope.builtin').help_tags,
-		},
-	},
-	opts = {
-		defaults = {
-			mappings = {
-		i = {
-			["<esc>"] = false,
-		},
-		n = {
-			["<esc>"] = false,
-		},
-			},
 		},
 	},
 }
